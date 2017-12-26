@@ -1,0 +1,10 @@
+<h1 class="text-center">Welcome {{user.name}} to Student Attendance Portal</h1><hr><h2 class="text-center">Timer: {{count}}<br>Enter Code: {{code}}</h2><div class="row"><div class="col-md-12"><form class="form-inline"><!--    <div class="form-group">
+        <select>
+          <option value="CSE" ng-selected="true">Computer Science Engineering</option>
+          <option value="PE">Petroleum Engineering</option>
+          <option value="ECE">Electronics and communication Engineering</option>
+          <option value="CE">Civil Engineering</option>
+          <option value="ME" >Mechanical Engineering</option>
+          <option value="EE" >Electrical Engineering</option>
+        </select>
+      </div> --><div class="form-group"><input type="text" class="form-control" id="sub" placeholder="Subject" ng-model="obj.subject"></div><div class="form-group"><input type="text" class="form-control" id="sub" placeholder="Enter Code" ng-model="obj.code"></div><button class="btn btn-primary" ng-click="attendance(obj)">Punch attendance</button></form></div></div>

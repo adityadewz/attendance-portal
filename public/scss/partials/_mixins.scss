@@ -1,0 +1,78 @@
+@mixin google-font($font) {
+    $font: unquote($font);
+
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+@mixin iphone{
+    @media only screen and (min-width : 320px) {
+        
+        @content;
+
+    }
+}
+
+@mixin xs{
+	@media only screen and (min-width : 480px) {
+		
+		@content;
+
+    }
+}
+
+@mixin sm{
+	@media only screen and (min-width : 768px) {
+
+	@content;
+
+    }
+}
+
+
+@mixin md{
+	@media only screen and (min-width : 992px) {
+	
+	@content;
+
+    }
+
+}
+
+@mixin lg{
+	
+	@media only screen and (min-width : 1200px) {
+
+	@content;
+
+    }
+
+}
+
+
+@mixin mid-sm-md{
+    @media only screen and (min-width : 769px) and (max-width:991px) {
+
+    @content;
+
+    }
+}
+
+@mixin mid-md-lg{
+    @media only screen and (min-width : 993px) and (max-width:1199px) {
+
+    @content;
+
+    }
+}
+
+@mixin dbarrow{
+
+    .heading{
+          background-image: url(../img/background/ribbon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+        padding: 12px 0px 3px;
+        text-align: center;
+
+    }
+}

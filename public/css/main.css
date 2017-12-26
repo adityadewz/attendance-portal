@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  background-color: #252830;
+  background-image: url("../img/bck3.jpg"); }
+
+i {
+  font-size: 17px !important; }
+
+button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-family: "Raleway"; }
+
+.navbar-brand {
+  font-size: 16px;
+  padding: 16px !important;
+  padding-left: 0px !important;
+  padding: 0; }
+  .navbar-brand img {
+    width: 52px; }
+
+#search {
+  display: block;
+  width: 400px;
+  background-color: #101010; }
+
+#submit {
+  background-color: #101010;
+  color: #fff; }
+
+.dropdown-menu a {
+  padding: 8px !important; }
+
+.nav-side-menu {
+  width: 210px;
+  display: block; }
+
+form {
+  margin-bottom: 50px;
+  text-align: center; }
+  form .form-group select {
+    background-color: #FFF;
+    padding: 10px !important;
+    width: 200px;
+    display: inline-block; }
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5 {
+  color: #000; }
+
+#loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  top: 95px; }
+
+.panel {
+  height: 200px; }
+
+.panel.map {
+  height: 565px;
+  width: 100%; }
+
+.chart {
+  height: 380px; }
+
+.chart-div img {
+  top: 184px; }
+
+#doughnut {
+  width: 300px !important;
+  height: 300px !important;
+  margin: auto; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+#view {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.menu-list {
+  font-size: 18px !important; }
+  .menu-list a {
+    color: #fff !important;
+    font-size: 13px !important; }

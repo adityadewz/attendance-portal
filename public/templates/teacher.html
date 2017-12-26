@@ -1,0 +1,75 @@
+<h1 class="text-center">Welcome {{user.name}} to Teacher Attendance Portal</h1>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <form class="form-inline">
+      
+      <div class="form-group">
+        <select ng-model="user.Ubranch">
+          <option value="CSE">Computer Science Engineering</option>
+          <option value="PE">Petroleum Engineering</option>
+          <option value="ECE">Electronics and communication Engineering</option>
+          <option value="CE">Civil Engineering</option>
+          <option value="ME" >Mechanical Engineering</option>
+          <option value="EE" >Electrical Engineering</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="sub" placeholder="Subject" ng-model="user.subject">
+      y</div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="class" placeholder="Class" ng-model="user.class">
+      </div>
+      <button class="btn btn-primary" ng-click="attendance(user)">
+      Take attendance
+      </button>
+      <button class="btn btn-primary" ng-click="getAttendance()">
+      Get final list
+      </button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default" style="height: auto;">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Attendance List</div>
+      <div class="panel-body">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table" ng-show="showInstantTable">
+            <tr>
+              <th> Name </th>
+              <th> Roll Number </th>
+            </tr>
+            
+            <tr ng-repeat="student in students">
+              <td> {{student.name}} </td>
+              <td> {{student.rollNo}} </td>
+            </tr>
+            
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table" ng-show="!showInstantTable">
+            <tr>
+              <th> Name </th>
+              <th> Roll Number </th>
+              <th> Presentees </th>
+            </tr>
+            
+            <tr ng-repeat="attendance in attendances">
+              <td> {{attendance.user.name}} </td>
+              <td> {{attendance.user.rollNo}} </td>
+              <td>{{attendance.present}}</td>
+            </tr>
+            
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
